@@ -1,0 +1,244 @@
+.body {
+	background-image: url('../image/montanha.jpeg');
+    background-size: 100.5% 119%;
+    font-family: "Comic Sans MS", cursive;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	-webkit-transition: background-image 2s ease-out;
+    -moz-transition: background-image 2s ease-out;
+    -o-transition: background-image 2s ease-out;
+    transition: background-image 2s ease-out;
+	overflow: hidden;
+}
+
+
+#opcao {
+	width: 100%;
+	max-width: 300px;
+	height: 330px;
+    margin: auto;
+	background: transparent;
+	box-shadow: black 0px 38px 80px 4px;
+	overflow: hidden;
+	margin-top: 90px;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 330px;
+}
+
+        .slide:nth-child(1) {
+         	display: flex;
+         	flex-direction:column;
+         	justify-content:center;
+        }
+
+        .slide:nth-child(2) {
+            display: flex;
+         	flex-direction:column;
+         	justify-content:center;
+        }
+
+h2 {
+	transform: translateY(-30px) translateX(120px);
+	margin: 0;
+}
+
+label[for="text"] {
+	
+	transform: translateX(50px);
+}
+
+#text{
+	width: 200px;
+	background-color: transparent;
+	border: 0;
+	border-bottom:2px solid black ;
+}
+.botao{
+	width: 205px;
+	height: 30px;
+	transform: translateX(50px) translateY(15px);
+	cursor: pointer;
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+    background-color: black;
+    -webkit-mask-image: linear-gradient(180deg, black, transparent 155%);
+    border: 1px solid black;
+    font-size: 16px;
+} 
+
+.botao:hover{
+	color: black;
+	background-color: orange;
+	-webkit-mask-image: linear-gradient(180deg, black, transparent 155%);
+}
+
+input[type="checkbox"]{
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  top: 57%;
+  left: 45px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#label{
+transform: translateY(-18px) translateX(70px);
+font-size: 13px;
+}
+
+a{
+	transform: translateY(20px) translateX(100px);
+	margin: 0;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+a:hover{
+	color: orange;
+}
+/*formulario2*/
+
+.title {
+	position: absolute;
+	transform: translateY(20px) translateX(-10px);
+	margin: 0;
+}
+
+label[for="text2"] {
+	transform: translateX(50px);
+}
+
+
+#text2 {
+	width: 200px;
+	background-color: transparent;
+	border: 0;
+	border-bottom:2px solid black ;
+}
+
+input[type="submit"] {
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Exibição em linha */
+  cursor: pointer; /* Cursor de ponteiro */
+  	width: 205px;
+	height: 30px;
+	transform: translateX(50px) translateY(15px);
+	cursor: pointer;
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+    background-color: black;
+    -webkit-mask-image: linear-gradient(180deg, black, transparent 155%);
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  color: black;
+}
+
+.navigation {
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    transform: translateX(-80%);
+    display: flex;
+	justify-content: right;
+    width: 360px;
+}
+
+.navigation label {
+    width: 50px;
+    height: 40px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+		
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"]{
+	border-bottom: 3px solid orange;
+}
+		
+p{
+	position: absolute;
+	color: white;
+	margin-top: 5px;
+}
+		
+#font1{
+	position: absolute;
+	left: 220px;
+}
+		
+#font2{
+  position: absolute;
+  left: 290px;
+}
+		
+#font1:active, #font1:hover{
+ color: orange;
+}
+		
+#font2:active, #font2:hover{
+ color: orange;
+}
+		
+#hr {
+    background-color:white;
+    color:white;
+    -webkit-transform:rotate(90deg);
+    position:absolute;
+    width:30px;
+    height:2px;
+    top: 10px;
+    left:260px;
+    border:2px;
+}
+
+footer {
+	position: absolute;
+	transform: translateY(260px);
+	margin: auto;
+	height: 20vh;
+	width: 101%;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;  
+}
+
+.footer{
+
+    height: 80px;
+	width: 101%;  
+	background-color: black;
+    -webkit-mask-image: linear-gradient(90deg, black, transparent 155%);
+}
