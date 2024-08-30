@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta name="viewport" content="width=device-widht, initial-scale=1">
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="style/login.css" type="text/css">
+     <title>Login</title>
+ </head>
+ <body class="body">
+   <header></header>
+   <main id="opcao">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+     <div class="slides">
+
+            <form class="slide" id="s1">
+                <h2><font color="black">Login</font></h2>
+              <label id="login" for="text">Username:
+                <br>
+              <input  type="text" id="text" name="User">
+              </label>
+              <label id="login" for="text">Password:
+                 <br>
+              <input type="password" id="text" name="senha" maxlength="8">
+              </label>
+                 <br>
+                 <input type="checkbox" id="save" name="save"/>
+                 <label id="label" for="salve">Save Password</label>  
+              <input type="button" class="botao" name="botao" value="Enter">
+              <a>Forgot Password?</a>
+            </form>
+
+            <form class="slide" id="s2">
+                <h2><font color="black" class="title">Sign up</font></h2>
+                <br>
+               <label id="login2" for="text2">Username:
+                <br>
+                  <input type="text" id="text2" name="senha" maxlength="15">
+                </label>
+                <label id="login2" for="text2">Email:
+                <br>
+                    <input type="email" id="text2" name="email">
+                </label>
+                <label id="login2" for="text2">Password:
+                <br>
+                  <input type="password" id="text2" name="senha" maxlength="8">
+                </label>
+                <label id="login2" for="text2">Password Confirm:
+                <br>
+                  <input type="password" id="text2" name="senha" maxlength="8">
+                </label>
+                <input type="submit" value="Register">
+            </form>
+
+     </div>
+        <div class="navigation">
+            <label for="slide1"><p id="font1">Login</p></label>
+            <hr id="hr">
+            <label for="slide2"><p id="font2">Sign up</p></label>
+        </div>
+   </main>
+   <footer>
+      <div class="footer">
+	     <blockquote align="center">
+             <font color="white">Persistence is the way</font>
+		 </blockquote>
+      </div>
+   </footer>
+   <script>
+     const images = [ 'image/girasol.jpg', 'image/noite_estrelada.jpeg', 'image/galaxia.jpg', 'image/montanha.jpeg'];
+      let currentIndex = 0;
+
+      function changeImage() {
+        document.querySelector('.body')
+        .style.backgroundImage =
+        `url('${images[currentIndex]}')`;
+            currentIndex =
+        (currentIndex + 1) % images.length;
+      }
+
+      setInterval(changeImage, 9000);
+        
+   </script>
+ </body>
+</html>
